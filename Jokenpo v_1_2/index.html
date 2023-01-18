@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoKenPo</title>
+    <link rel="stylesheet" href="jokenpo_estilo.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section>
+        <div id="centro">
+
+            <form name="frmjokenpo" id="frmjokenpo">
+                <table id="table_humano">
+                    <tr>
+                        <td colspan="3">
+                            <h2>HUMANO</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/pedra.png" alt="pedra" id="imgpedra"></td>
+                        <td><img src="imagens/papel.png" alt="papel" id="imgpapel"></td>
+                        <td><img src="imagens/tesoura.png" alt="tesoura" id="imgtesoura"></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="radio" name="opcao" id="rpedra"> Pedra</label></td>
+                        <td><label><input type="radio" name="opcao" id="rpapel"> Papel</label></td>
+                        <td><label><input type="radio" name="opcao" id="rtesoura"> Tesoura</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="button" value="Jogar" id="btnjogar" onClick="jogar()">
+                            <input type="reset" value="Recomeçar" id="btnresetar" onClick="resetar()">
+                        </td>
+                    </tr>
+                </table>
+            </form>                  
+
+            <table id="table_comp">
+                <tr>
+                    <td>
+                        <h2>COMPUTADOR</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="imagens/pc.png" alt="computador" id="computador"></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div id="ant_res">
+            <hr />
+            <h3>Resultado do Jogo</h3>
+
+            <div id="res">
+                <!-- Resul
+                    tado do jogo aparece aqui-->
+            </div>
+
+            <div>
+                <div id="placar_img">
+                    <div id="reshumano"><!--Placar Humano--></div>
+                    <div id="img_humano_out"><img src="imagens/humano.png" alt="" id="img_humano"></div>
+                    <div id="img_comp_out"><img src="imagens/computador.png" alt="" id="img_comp"></div>
+                    <div id="rescomp"><!--Placar Computador--></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>JulianoGuelfi &reg;</p>
+    </footer>
+    <script src="jokenpo.js"></script>
+</body>
+
+</html>
